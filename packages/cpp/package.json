@@ -1,0 +1,13 @@
+{
+  "name": "@lodash/cpp",
+  "version": "0.0.1",
+  "description": "C++",
+  "main": "lodash.cpp",
+  "repository": "git@github.com:hieudoanm/lodash.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "rm -rf unittest && g++ -o unittest test.cpp lodash.hpp && ./unittest"
+  }
+}
