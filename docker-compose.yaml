@@ -1,0 +1,19 @@
+version: '3.9'
+
+volumes:
+  postgres_brain:
+    driver: local
+
+services:
+  postgres-brain:
+    image: postgres:latest
+    container_name: postgres-brain
+    restart: always
+    volumes:
+      - postgres_brain:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password

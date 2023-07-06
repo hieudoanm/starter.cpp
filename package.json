@@ -1,0 +1,25 @@
+{
+  "name": "@brain/app",
+  "version": "0.0.1",
+  "description": "Brain - App",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/app.brain.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GNU GPL V3.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install || true"
+  },
+  "devDependencies": {
+    "@prisma/client": "4.16.2",
+    "husky": "8.0.3",
+    "prettier": "3.0.0",
+    "prisma": "4.16.2",
+    "prisma-dbml-generator": "0.10.0",
+    "prisma-docs-generator": "0.8.0",
+    "prisma-json-schema-generator": "3.1.4"
+  },
+  "workspaces": [
+    "services/*"
+  ]
+}
